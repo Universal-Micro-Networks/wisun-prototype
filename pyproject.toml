@@ -1,0 +1,24 @@
+[project]
+name = "wisun-prototype"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Tadashi Takahashi", email = "ttakahashi@umn.co.jp" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.12"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/wisun_prototype"]
